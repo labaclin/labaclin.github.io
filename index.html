@@ -43,6 +43,13 @@
         padding: 30px;
         zoom: 140%;
         border-radius: 3px;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
     }
 
     .formHead img{
@@ -60,7 +67,13 @@
        text-align: center;
        
     }
+    .row{
+        margin-bottom:30px; 
+    }
 
+    h6 {
+        font-size: 18px;
+    }
 
     .col.emoji {
     width: 100px;
@@ -137,19 +150,19 @@
 
                 <div class="col">
                     <input name="entry.1749492173" type="radio" id="test1" value="Sede" />
-                    <label for="test1" class="textSpeach">Sede</label>
+                    <label class="textSpeach" for="test1" class="textSpeach">Sede</label>
                 </div>
                 <div class="col">
                     <input name="entry.1749492173" type="radio" id="test2" value="Famede" />
-                    <label for="test2" class="textSpeach">Famede</label>
+                    <label class="textSpeach" for="test2" class="textSpeach">Famede</label>
                 </div>
                 <div class="col">
                     <input name="entry.1749492173" type="radio" id="test3" value="Central" />
-                    <label for="test3" class="textSpeach">Central</label>
+                    <label class="textSpeach" for="test3" class="textSpeach">Central</label>
                 </div>
                 <div class="col">
                     <input name="entry.1749492173" type="radio" id="test4" value="Outros" />
-                    <label for="test4" class="textSpeach">Outros</label>
+                    <label class="textSpeach" for="test4" class="textSpeach">Outros</label>
                 </div>
 
             </div>
@@ -157,11 +170,14 @@
             <br>
             <br>
     
-            
+            <div class="">
+                <h6 class="textSpeach">Conte-nos o que você achou da nossa recepção quando a:</h6>
+            </div>    
             <div class="row">
-                    <div class="col question">
-                        <h5 class="textSpeach">Recepção</h5>
-                    </div>
+                <div class="col question">
+                     
+                </div>
+
                     <div class="col emoji">
                             <i  class="em em-slightly_frowning_face"></i>         
                     </div>
@@ -188,24 +204,24 @@
 
                 <div class="col">
                     <input name="entry.1356030109" type="radio" id="a1" value="Péssimo" />
-                    <label for="a1"> Péssimo</label>
+                    <label class="textSpeach" for="a1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.1356030109" type="radio" id="a2" value="Ruim" />
-                    <label for="a2"> Ruim</label>
+                    <label class="textSpeach" for="a2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.1356030109" type="radio" id="a3" value="Regular" />
-                    <label for="a3"> Regular</label>
+                    <label class="textSpeach" for="a3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.1356030109" type="radio" id="a4" value="Bom" />
-                    <label for="a4"> Bom</label>
+                    <label class="textSpeach" for="a4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.1356030109" type="radio" id="a5" value="Ótimo" />
-                    <label for="a5"> Ótimo</label>
+                    <label class="textSpeach" for="a5"> Ótimo</label>
                 </div>
             </div>
 
@@ -216,24 +232,24 @@
 
                 <div class="col">
                     <input name="entry.1859265775" type="radio" id="b1" value="Péssimo" />
-                    <label for="b1"> Péssimo</label>
+                    <label class="textSpeach" for="b1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.1859265775" type="radio" id="b2" value="Ruim" />
-                    <label for="b2"> Ruim</label>
+                    <label class="textSpeach" for="b2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.1859265775" type="radio" id="b3" value="Regular" />
-                    <label for="b3"> Regular</label>
+                    <label class="textSpeach" for="b3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.1859265775" type="radio" id="b4" value="Bom" />
-                    <label for="b4"> Bom</label>
+                    <label class="textSpeach" for="b4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.1859265775" type="radio" id="b5" value="Ótimo" />
-                    <label for="b5"> Ótimo</label>
+                    <label class="textSpeach" for="b5"> Ótimo</label>
                 </div>
             </div>
 
@@ -244,24 +260,24 @@
 
                 <div class="col">
                     <input name="entry.463780276" type="radio" id="c1" value="Péssimo" />
-                    <label for="c1"> Péssimo</label>
+                    <label class="textSpeach" for="c1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.463780276" type="radio" id="c2" value="Ruim" />
-                    <label for="c2"> Ruim</label>
+                    <label class="textSpeach" for="c2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.463780276" type="radio" id="c3" value="Regular" />
-                    <label for="c3"> Regular</label>
+                    <label class="textSpeach" for="c3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.463780276" type="radio" id="c4" value="Bom" />
-                    <label for="c4"> Bom</label>
+                    <label class="textSpeach" for="c4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.463780276" type="radio" id="c5" value="Ótimo" />
-                    <label for="c5"> Ótimo</label>
+                    <label class="textSpeach" for="c5"> Ótimo</label>
                 </div>
             </div>
             
@@ -273,24 +289,24 @@
 
                 <div class="col">
                     <input name="entry.401164663" type="radio" id="d1" value="Péssimo" />
-                    <label for="d1"> Péssimo</label>
+                    <label class="textSpeach" for="d1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.401164663" type="radio" id="d2" value="Ruim" />
-                    <label for="d2"> Ruim</label>
+                    <label class="textSpeach" for="d2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.401164663" type="radio" id="d3" value="Regular" />
-                    <label for="d3"> Regular</label>
+                    <label class="textSpeach" for="d3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.401164663" type="radio" id="d4" value="Bom" />
-                    <label for="d4"> Bom</label>
+                    <label class="textSpeach" for="d4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.401164663" type="radio" id="d5" value="Ótimo" />
-                    <label for="d5"> Ótimo</label>
+                    <label class="textSpeach" for="d5"> Ótimo</label>
                 </div>
             </div>
           
@@ -298,10 +314,12 @@
             <br>
             <br>
     
-            
+            <div class="">
+                <h6 class="textSpeach">E sobre a coleta? Nos conte abaixo o que você achou da:</h6>
+            </div> 
             <div class="row">
                     <div class="col question">
-                        <h5 class="textSpeach">Coleta</h5>
+                       
                     </div>
                     <div class="col emoji">
                             <i  class="em em-slightly_frowning_face"></i>         
@@ -329,24 +347,24 @@
 
                 <div class="col">
                     <input name="entry.415491946" type="radio" id="e1" value="Péssimo" />
-                    <label for="e1"> Péssimo</label>
+                    <label class="textSpeach" for="e1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.415491946" type="radio" id="e2" value="Ruim" />
-                    <label for="e2"> Ruim</label>
+                    <label class="textSpeach" for="e2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.415491946" type="radio" id="e3" value="Regular" />
-                    <label for="e3"> Regular</label>
+                    <label class="textSpeach" for="e3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.415491946" type="radio" id="e4" value="Bom" />
-                    <label for="e4"> Bom</label>
+                    <label class="textSpeach" for="e4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.415491946" type="radio" id="e5" value="Ótimo" />
-                    <label for="e5"> Ótimo</label>
+                    <label class="textSpeach" for="e5"> Ótimo</label>
                 </div>
             </div>
 
@@ -357,24 +375,24 @@
 
                 <div class="col">
                     <input name="entry.145936294" type="radio" id="f1" value="Péssimo" />
-                    <label for="f1"> Péssimo</label>
+                    <label class="textSpeach" for="f1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.145936294" type="radio" id="f2" value="Ruim" />
-                    <label for="f2"> Ruim</label>
+                    <label class="textSpeach" for="f2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.145936294" type="radio" id="f3" value="Regular" />
-                    <label for="f3"> Regular</label>
+                    <label class="textSpeach" for="f3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.145936294" type="radio" id="f4" value="Bom" />
-                    <label for="f4"> Bom</label>
+                    <label class="textSpeach" for="f4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.145936294" type="radio" id="f5" value="Ótimo" />
-                    <label for="f5"> Ótimo</label>
+                    <label class="textSpeach" for="f5"> Ótimo</label>
                 </div>
             </div>
 
@@ -385,24 +403,24 @@
 
                 <div class="col">
                     <input name="entry.2053806772" type="radio" id="g1" value="Péssimo" />
-                    <label for="g1"> Péssimo</label>
+                    <label class="textSpeach" for="g1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.2053806772" type="radio" id="g2" value="Ruim" />
-                    <label for="g2"> Ruim</label>
+                    <label class="textSpeach" for="g2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.2053806772" type="radio" id="g3" value="Regular" />
-                    <label for="g3"> Regular</label>
+                    <label class="textSpeach" for="g3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.2053806772" type="radio" id="g4" value="Bom" />
-                    <label for="g4"> Bom</label>
+                    <label class="textSpeach" for="g4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.2053806772" type="radio" id="g5" value="Ótimo" />
-                    <label for="g5"> Ótimo</label>
+                    <label class="textSpeach" for="g5"> Ótimo</label>
                 </div>
             </div>
             
@@ -410,10 +428,13 @@
             <br>
             <br>
             
-            
+
+            <div class="">
+                <h6 class="textSpeach">Qual a sua opinião sobre o nosso ambiente?</h6>
+            </div> 
             <div class="row">
                     <div class="col question">
-                        <h5 class="textSpeach">Apresentação Geral</h5>
+                        
                     </div>
                     <div class="col emoji">
                             <i  class="em em-slightly_frowning_face"></i>         
@@ -441,24 +462,24 @@
 
                 <div class="col">
                     <input name="entry.279577992" type="radio" id="h1" value="Péssimo" />
-                    <label for="h1"> Péssimo</label>
+                    <label class="textSpeach" for="h1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.279577992" type="radio" id="h2" value="Ruim" />
-                    <label for="h2"> Ruim</label>
+                    <label class="textSpeach" for="h2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.279577992" type="radio" id="h3" value="Regular" />
-                    <label for="h3"> Regular</label>
+                    <label class="textSpeach" for="h3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.279577992" type="radio" id="h4" value="Bom" />
-                    <label for="h4"> Bom</label>
+                    <label class="textSpeach" for="h4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.279577992" type="radio" id="h5" value="Ótimo" />
-                    <label for="h5"> Ótimo</label>
+                    <label class="textSpeach" for="h5"> Ótimo</label>
                 </div>
             </div>
 
@@ -469,24 +490,24 @@
 
                 <div class="col">
                     <input name="entry.1370149235" type="radio" id="i1" value="Péssimo" />
-                    <label for="i1"> Péssimo</label>
+                    <label class="textSpeach" for="i1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.1370149235" type="radio" id="i2" value="Ruim" />
-                    <label for="i2"> Ruim</label>
+                    <label class="textSpeach" for="i2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.1370149235" type="radio" id="i3" value="Regular" />
-                    <label for="i3"> Regular</label>
+                    <label class="textSpeach" for="i3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.1370149235" type="radio" id="i4" value="Bom" />
-                    <label for="i4"> Bom</label>
+                    <label class="textSpeach" for="i4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.1370149235" type="radio" id="i5" value="Ótimo" />
-                    <label for="i5"> Ótimo</label>
+                    <label class="textSpeach" for="i5"> Ótimo</label>
                 </div>
             </div>
 
@@ -497,24 +518,24 @@
 
                 <div class="col">
                     <input name="entry.1322674943" type="radio" id="j1" value="Péssimo" />
-                    <label for="j1"> Péssimo</label>
+                    <label class="textSpeach" for="j1"> Péssimo</label>
                 </div>
                 <div class="col">
                     <input name="entry.1322674943" type="radio" id="j2" value="Ruim" />
-                    <label for="j2"> Ruim</label>
+                    <label class="textSpeach" for="j2"> Ruim</label>
                 </div>
                 <div class="col">
                     <input name="entry.1322674943" type="radio" id="j3" value="Regular" />
-                    <label for="j3"> Regular</label>
+                    <label class="textSpeach" for="j3"> Regular</label>
                 </div>
                 <div class="col">
                     <input name="entry.1322674943" type="radio" id="j4" value="Bom" />
-                    <label for="j4"> Bom</label>
+                    <label class="textSpeach" for="j4"> Bom</label>
                 </div>
 
                 <div class="col">
                     <input name="entry.1322674943" type="radio" id="j5" value="Ótimo" />
-                    <label for="j5"> Ótimo</label>
+                    <label class="textSpeach" for="j5"> Ótimo</label>
                 </div>
             </div>
             
@@ -529,7 +550,7 @@
 
                 <div class="col">
                     <input name="entry.801354022" type="radio" id="k1" value="Livro do Convenio" />
-                    <label for="k1" class="textSpeach">Livro do Convênio</label>
+                    <label class="textSpeach" for="k1" class="textSpeach">Livro do Convênio</label>
                 </div>
                 <div class="col">
                     <input name="entry.801354022" type="radio" id="k2" value="Medico" />
@@ -571,11 +592,11 @@
 
                 <div class="col">
                     <input name="entry.1384330096" type="radio" id="l1" value="Sim" />
-                    <label for="l1"><i class="em em&nbsp; &nbsp;1"></i> Sim</label>
+                    <label for="l1"><i class="em em---1"></i> <span class="textSpeach" >Sim</span></label>
                 </div>
                 <div class="col">
                     <input name="entry.1384330096" type="radio" id="l2" value="Não" />
-                    <label for="l2"><i class="em em--1"></i> Não</label>
+                    <label for="l2"><i class="em em--1"></i> <span class="textSpeach" >Não</span></label>
                 </div>
             </div>
 
@@ -591,45 +612,45 @@
                             <div class="col"> <i  class="em em-slightly_frowning_face"></i>   </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn1" value="1" />
-                                <label for="mn1">1</label>
+                                <label class="textSpeach" for="mn1">1</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn2" value="2" />
-                                <label for="mn2">2</label>
+                                <label class="textSpeach" for="mn2">2</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn3" value="3" />
-                                <label for="mn3">3</label>
+                                <label class="textSpeach" for="mn3">3</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn4" value="4" />
-                                <label for="mn4">4</label>
+                                <label class="textSpeach" for="mn4">4</label>
                             </div>
             
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn5" value="5" />
-                                <label for="mn5">5</label>
+                                <label class="textSpeach" for="mn5">5</label>
                             </div>
                            
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn6" value="6" />
-                                <label for="mn6">6</label>
+                                <label class="textSpeach" for="mn6">6</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn7" value="7" />
-                                <label for="mn7">7</label>
+                                <label class="textSpeach" for="mn7">7</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn8" value="8" />
-                                <label for="mn8">8</label>
+                                <label class="textSpeach" for="mn8">8</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn9" value="9" />
-                                <label for="mn9">9</label>
+                                <label class="textSpeach" for="mn9">9</label>
                             </div>
                             <div class="col">
                                 <input name="entry.1142074214" type="radio" id="mn10" value="10" />
-                                <label for="mn10">10</label>
+                                <label class="textSpeach" for="mn10">10</label>
                             </div>
                             <div class="col"> <i class="em em-grinning_face_with_star_eyes"></i></div>
                         </div>
@@ -643,7 +664,7 @@
                         <div class="row">
                             <div class="input-field col s12">
                               <textarea name="entry.1257837348" id="textarea1" class="materialize-textarea" ></textarea>
-                              <label for="textarea1">Comentários e Sugestões</label>
+                              <label class="textSpeach" for="textarea1">Comentários e Sugestões</label>
                             </div>
                           </div>
 
@@ -657,22 +678,22 @@
                                 <div class="input-field col s6">
                                  
                                   <input name="entry.352928624" id="icon_prefix" type="text" class="validate">
-                                  <label for="icon_prefix">Nome</label>
+                                  <label class="textSpeach" for="icon_prefix">Nome</label>
                                 </div>
                                 <div class="input-field col s6">
                                  
                                   <input name="entry.1113613119" id="icon_telephone" type="tel" class="validate">
-                                  <label for="icon_telephone">Telefone</label>
+                                  <label class="textSpeach" for="icon_telephone">Telefone</label>
                                 </div>
 
                                 <div class="input-field col s6">
                                         <input name="entry.1059083882" id="email" type="email" class="validate">
-                                        <label for="email" data-error="wrong" data-success="right">Email</label>
+                                        <label class="textSpeach" for="email" data-error="wrong" data-success="right">Email</label>
                                       </div>
                                      
                                       <div class="input-field col s6">
                                             <input name="entry.2059395574" id="colab" type="text"  class="validate">
-                                            <label for="colab">Colaborador</label>
+                                            <label class="textSpeach" for="colab">Colaborador</label>
                                           </div>
                               </div>
 
