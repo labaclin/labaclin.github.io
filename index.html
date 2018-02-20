@@ -135,7 +135,7 @@
                   </div>
 
     <div class="formHead">
-        <img src="logomarca.png" width="200px"/>
+        <img src="logomarca.png" alt="Labaclin. Laboratório de análises clínicas." width="200px"/>
         <br><br>
         <p class="textSpeach">Prezado Cliente, a melhoria contínua de nossos serviços depende de sua contribução. Por isso, gostaríamos de saber sua opinião.</p>
     </div>
@@ -678,22 +678,22 @@
                           <div class="row">
                                 <div class="input-field col s6">
                                  
-                                  <input name="entry.352928624" id="icon_prefix" type="text" class="validate">
+                                  <input name="entry.352928624" id="icon_prefix" alt="Nome" type="text" class="validate">
                                   <label class="textSpeach" for="icon_prefix">Nome</label>
                                 </div>
                                 <div class="input-field col s6">
                                  
-                                  <input name="entry.1113613119" id="icon_telephone" type="tel" class="validate">
+                                  <input name="entry.1113613119" id="icon_telephone" alt="Telefone" type="tel" class="validate">
                                   <label class="textSpeach" for="icon_telephone">Telefone</label>
                                 </div>
 
                                 <div class="input-field col s6">
-                                        <input name="entry.1059083882" id="email" type="email" class="validate">
+                                        <input name="entry.1059083882" id="email" type="email" alt="Email" class="validate">
                                         <label class="textSpeach" for="email" data-error="wrong" data-success="right">Email</label>
                                       </div>
                                      
                                       <div class="input-field col s6">
-                                            <input name="entry.2059395574" id="colab" type="text"  class="validate">
+                                            <input name="entry.2059395574" id="colab" alt="Colaborador" type="text"  class="validate">
                                             <label class="textSpeach" for="colab">Colaborador</label>
                                           </div>
                               </div>
@@ -743,6 +743,13 @@ $(function(){
         }
     });
 
+   
+    $("input, img").click(function(){
+        if($(".switch input").prop( "checked" )){
+            var msg = new SpeechSynthesisUtterance( $(this).attr("alt"));
+            window.speechSynthesis.speak(msg);
+        }
+    });
 
 });
 
