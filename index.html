@@ -53,6 +53,8 @@
     /* cursor: default; */
     }
 
+
+
     .formHead img{
         display: block;
         margin: 0 auto;
@@ -82,6 +84,10 @@
     margin-top: 18px;
 }
 
+.indicators{
+   display: none;
+}
+
 .switch label .lever{
     margin: 0;
 }
@@ -99,6 +105,11 @@
 .footer i{
     margin-right: 10px;
 }
+
+.em, .em-svg {
+    height: 2.5em;
+    width: 2.5em;
+    }
 
 @media (max-width: 1200px) 
 {
@@ -144,6 +155,7 @@
         <!-- START CODING YOUR FORM -->
         <form action="https://docs.google.com/forms/d/e/1FAIpQLSfnnng7m6fsc1RkkBHsJHMYiNZ7Ow6OmO7Ea_ZOXV7aDBOxwQ/formResponse">
 
+
             <div class="row">
                 <h6 class="textSpeach">Unidade de Atendimento</h6>
             </div>
@@ -162,8 +174,26 @@
                     <label class="textSpeach" for="test3" class="textSpeach">Central</label>
                 </div>
                 <div class="col">
+                    <input name="entry.1749492173" type="radio" id="test5" value="Conceição da Feira" />
+                    <label class="textSpeach" for="test5" class="textSpeach">Conceição da Feira</label>
+                </div>
+                <div class="col">
+                    <input name="entry.1749492173" type="radio" id="test6" value="São José" />
+                    <label class="textSpeach" for="test6" class="textSpeach">São José</label>
+                </div>
+                </div>
+                <div class="row">
+                <div class="col">
+                    <input name="entry.1749492173" type="radio" id="test7" value="Coplan" />
+                    <label class="textSpeach" for="test7" class="textSpeach">Coplan</label>
+                </div>
+                <div class="col">
+                    <input name="entry.1749492173" type="radio" id="test8" value="Cabaceiras" />
+                    <label class="textSpeach" for="test8" class="textSpeach">Cabaceiras</label>
+                </div>
+                <div class="col">
                     <input name="entry.1749492173" type="radio" id="test4" value="Outros" />
-                    <label class="textSpeach" for="test4" class="textSpeach">Outros</label>
+                    <label class="textSpeach" for="test4" class="textSpeach">Outro</label>
                 </div>
 
             </div>
@@ -172,8 +202,9 @@
             <br>
     
             <div class="">
-                <h6 class="textSpeach">Conte-nos o que você achou da nossa recepção quando a:</h6>
-            </div>    
+                <h6 class="textSpeach">Conte-nos o que você achou da nossa recepção quanto a:</h6>
+            </div> 
+            <div class="recepcao">   
             <div class="row">
                 <div class="col question">
                      
@@ -198,7 +229,7 @@
       
 
 
-            <div class="row">
+            <div class="row atencaocordialidade">
                     <div class="col question textSpeach">
                             Atenção e cordialidade
                     </div>
@@ -226,7 +257,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row clarezanasinformacoes">
                     <div class="col question textSpeach">
                            Clareza das informações
                     </div>
@@ -254,7 +285,7 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row agilidadenoatendimento">
                     <div class="col question textSpeach">
                             Agilidade no Atendimento
                     </div>
@@ -283,7 +314,7 @@
             </div>
             
 
-            <div class="row">
+            <div class="row tempodeespera">
                     <div class="col question textSpeach">
                            Tempo de espera
                     </div>
@@ -311,10 +342,12 @@
                 </div>
             </div>
           
+            </div>
 
             <br>
             <br>
     
+            <div class="coleta">
             <div class="">
                 <h6 class="textSpeach">E sobre a coleta? Nos conte abaixo o que você achou da:</h6>
             </div> 
@@ -424,12 +457,12 @@
                     <label class="textSpeach" for="g5"> Ótimo</label>
                 </div>
             </div>
-            
+        </div>
 
             <br>
             <br>
             
-
+            <div class="ambiente">
             <div class="">
                 <h6 class="textSpeach">Qual a sua opinião sobre o nosso ambiente?</h6>
             </div> 
@@ -539,7 +572,7 @@
                     <label class="textSpeach" for="j5"> Ótimo</label>
                 </div>
             </div>
-            
+        </div>
 
             <br><br>
 
@@ -699,9 +732,23 @@
                               </div>
 
 <br>
+
+
+            <!-INDICADORES->
+            <div class="indicators">
+            <input name="entry.1740921028" value="-" id="recep" type="text"  class="validate">
+            <input name="entry.194164308" value="-" id="coleta" type="text"  class="validate">
+            <input name="entry.464514981" value="-" id="geral" type="text"  class="validate">
+            </div>
+
+
+
+
             <!-- SUBMIT BUTTON -->
-            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar </button>                 
+        <button class="btn waves-effect waves-light" type="submit"  name="action">Enviar </button> 
+            
         </form>
+                    
         <br><br><br><br>
         <div class="row footer">
                 <p><i class=" material-icons">location_on</i> <span class="textSpeach">Rua Desidério Brandão, 315, Cruz das Almas - BA</span></p>
@@ -722,9 +769,6 @@
 
 
 
-
-
-
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
@@ -737,6 +781,7 @@ $(function(){
    //$( ".textSpeach" ).append("<SUP>▶️</SUP>");
 
     $( ".textSpeach" ).click(function() {
+        window.speechSynthesis.cancel();
         if($(".switch input").prop( "checked" )){
             var msg = new SpeechSynthesisUtterance( $(this).html());
             window.speechSynthesis.speak(msg);
@@ -745,14 +790,53 @@ $(function(){
 
    
     $("input, img").click(function(){
-        if($(".switch input").prop( "checked" )){
+        if($(".switch inrecepput").prop( "checked" )){
             var msg = new SpeechSynthesisUtterance( $(this).attr("alt"));
             window.speechSynthesis.speak(msg);
         }
     });
 
+
+$("button").click(function(){
+   
+    var arr=0;
+    var i=0;
+    var hasAnswer = false;
+
+    $('.recepcao input:checked').each(function(item){
+        i++;
+        hasAnswer = true;
+        arr += (parseInt($(this).attr("id").charAt(1))-1)*25;
+       // console.log(arr);
+    });
+    if(hasAnswer){$('#recep').attr("value", Math.round(arr/i));}
+
+    i=0;
+    arr=0;
+    hasAnswer =false;
+    $('.coleta input:checked').each(function(item){
+        i++;
+        hasAnswer = true;
+        arr += (parseInt($(this).attr("id").charAt(1))-1)*25;
+    });
+    if(hasAnswer){$('#coleta').attr("value", Math.round(arr/i));}
+
+
+    i=0;
+    arr=0;
+    hasAnswer =false;
+    $('.ambiente input:checked').each(function(item){
+        i++;
+        hasAnswer = true;
+        arr += (parseInt($(this).attr("id").charAt(1))-1)*25;
+    });
+    if(hasAnswer){$('#geral').attr("value", Math.round(arr/i));}
+
+
+
+
+    });
+
 });
-
-
 </script>
 </html>
